@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2006-2017 Wade Alcorn - wade@bindshell.net
+# Browser Exploitation Framework (BeEF) - http://beefproject.com
+# See the file 'doc/COPYING' for copying permission
+#
+beef:
+    module:
+        fake_uac:
+            enable: true
+            category: "Social Engineering"
+            name: "Fake UAC"
+            description: "Pops a fake UAC prompt querying the user for domain crendentials. Also \"disables\" the rest of the page to trick users into filling the prompt."
+            authors: ["ldionmarcil [ldmarcil@gosecure.ca]"]
+            target:
+                working: ["IE"]
+                user_notify: ['ALL']
